@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://wallpaperaccess.com/full/3079622.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: bolder;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.canvas-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    z-index: 9999;
+}
+
+.message-text {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.red-alert {
+    background-color: #ff5252;
+    color: #fff;
+}
+
+.green-alert {
+    background-color: #00c853;
+    color: #fff;
+}
+
+.orange-alert {
+    background-color: #ffab40;
+    color: #fff;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #eee8e8;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.close-button:hover {
+    color: #666;
+}
+
+#label-container{
+    line-height: 40px;
+}
